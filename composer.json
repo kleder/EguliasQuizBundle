@@ -1,0 +1,14 @@
+{
+    "name": "rafalkorszun/EguliasQuizBundle",
+    "description": "A Symony 2 bundle for creating and managing quizes.",
+    "keywords": ["quiz"],
+    "homepage": "https://github.com/rafalkorszun/EguliasQuizBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Gulias",
+        },
+    ],
+    "target-dir": "Egulias/QuizBundle"
+}
