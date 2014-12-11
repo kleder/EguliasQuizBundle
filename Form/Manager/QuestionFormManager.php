@@ -6,9 +6,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
 
 use Egulias\QuizBundle\Form\Type\QuestionFormType;
-use Egulias\QuizBundle\Entity\Quiz;
-use Egulias\QuizBundle\Entity\QuizQuestion;
-use Doctrine\Common\Util\Debug;
 
 /**
  * QuizFormManager

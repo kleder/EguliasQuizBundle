@@ -4,9 +4,8 @@ namespace Egulias\QuizBundle\Form\Manager;
 use Symfony\Component\HttpFoundation\Request;
 
 use Egulias\QuizBundle\Form\Type\QuizFormType;
-use Egulias\QuizBundle\Entity\Quiz;
 use Egulias\QuizBundle\Entity\QuizQuestion;
-use Doctrine\Common\Util\Debug;
+
 /**
  *
  * @author Eduardo Gulias Davis <me@egulias.com>

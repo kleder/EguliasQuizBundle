@@ -3,19 +3,7 @@
 namespace Egulias\QuizBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller,
-    Symfony\Component\HttpFoundation\RedirectResponse,
-    Symfony\Component\HttpFoundation\Response,
-    Sensio\Bundle\FrameworkExtraBundle\Configuration\Route,
-    JMS\SecurityExtraBundle\Annotation\Secure,
-    Doctrine\Common\Util\Debug
-;
-
-use Egulias\QuizBundle\Entity\Quiz;
-use Egulias\QuizBundle\Entity\Answer;
-use Egulias\QuizBundle\Entity\QuizQuestion;
-use Egulias\QuizBundle\Form\Type\GenericQuizFormType as QuizForm;
-use Egulias\QuizBundle\Form\Type\AnswerFormType as AnswerForm;
-use Doctrine\Common\Collections\ArrayCollection;
+    Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class QuizController extends Controller
 {

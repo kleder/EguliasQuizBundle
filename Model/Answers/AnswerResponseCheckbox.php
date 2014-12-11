@@ -3,7 +3,6 @@
 namespace Egulias\QuizBundle\Model\Answers;
 
 use Egulias\QuizBundle\Model\Questions\Question;
-use Symfony\Component\Form\Extension\Core\ChoiceList\ChoiceListInterface;
 
 /**
  * @author Eduardo Gulias Davis
@@ -13,10 +12,13 @@ use Symfony\Component\Form\Extension\Core\ChoiceList\ChoiceListInterface;
 class AnswerResponseCheckbox extends AnswerResponse
 {
 
+    private $response;
+    private $choices;
+
     public function __construct($response, Question $question)
     {
         $this->response = $response;
-        $choices = $question->getChoices();
+        $this->choices = $question->getChoices();
         $this->setValue($response);
         $this->setText($response);
     }

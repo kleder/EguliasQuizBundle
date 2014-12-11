@@ -12,5 +12,10 @@
             "name": "Eduardo Gulias"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "Egulias\\QuizBundle": ""
+        }
+    },
     "target-dir": "Egulias/QuizBundle"
 }

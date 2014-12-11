@@ -5,13 +5,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use JMS\SecurityExtraBundle\Annotation\Secure;
-use Doctrine\Common\Util\Debug;
-
-
 use Egulias\QuizBundle\Form\Type\QuestionFormType;
 use Egulias\QuizBundle\Entity\QuizQuestion;
-use Egulias\QuizBundle\Form\Type\QuestionOptionsFormType;
 use Egulias\QuizBundle\Form\Type\QuestionsListFormType;
 
 /**

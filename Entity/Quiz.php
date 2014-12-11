@@ -6,7 +6,6 @@ use
     Egulias\QuizBundle\Model\Quizes\Quiz as BaseQuiz,
     Doctrine\ORM\Mapping as ORM
 ;
-use Doctrine\Common\Util\Debug;
 
 /**
  *

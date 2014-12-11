@@ -19,5 +19,4 @@ class Choices extends QuestionChoices
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
-
 }

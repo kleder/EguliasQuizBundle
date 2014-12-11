@@ -50,7 +50,9 @@ abstract class QuestionChoices implements ChoiceListInterface
 
     public function setChoices(array $choices)
     {
-        if (!is_array($choices))throw new \InvalidArgumentException;
+        if (!is_array($choices)) {
+            throw new \InvalidArgumentException;
+        }
 
         $this->choices = $choices;
         return $this;
@@ -72,4 +74,53 @@ abstract class QuestionChoices implements ChoiceListInterface
         $config = $this->getConfig();
         return $config['type'];
     }
+    
+    public function getChoicesForValues(array $values) {
+        $ch = array();
+        foreach ($this->choices as $choice){
+            if (in_array($choice['value'], $values)) {
+                $ch[] = $choice;
+            }
+        }
+        return $ch;
+    }
+
+    /**
+     * @deprecated Deprecated since symfony 2.4, to be removed in 3.0.
+     */
+    public function getIndicesForChoices(array $choices) {
+        return $choices;
+    }
+
+     /**
+     * @deprecated Deprecated since symfony 2.4, to be removed in 3.0.
+     */
+    public function getIndicesForValues(array $values) {
+        return $values;
+    }
+
+    public function getPreferredViews() {
+        return array();
+    }
+
+    public function getRemainingViews() {
+        return array();
+    }
+
+    public function getValues() {
+        $values = array();
+        foreach ($this->choices as $choice){
+            $values[]=$choice['value'];
+        }
+        return $values;
+    }
+
+    public function getValuesForChoices(array $choices) {
+        $values = array();
+        foreach ($choices as $choice){
+            $values[]=$choice['value'];
+        }
+        return $values;
+    }
+
 }
